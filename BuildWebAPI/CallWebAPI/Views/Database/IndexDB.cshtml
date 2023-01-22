@@ -1,0 +1,23 @@
+﻿@model IEnumerable<CallWebAPI.Model.DevicesDto> 
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                ItemName
+            </th>
+            <th>
+                AssetId
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+        <tr>
+            <td>@item.ItemName</td>
+            <td>@item.AssetId</td>
+        </tr>
+        
+            }
+    </tbody>
+</table>
